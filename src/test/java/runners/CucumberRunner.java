@@ -11,7 +11,10 @@ import org.junit.runner.RunWith;
         glue = "step_definitions",
         dryRun = false,
         tags="@parameters",
-        plugin = {"rerun:target/rerun.txt", "html:target/default-cucumber-reports","json:target/cucumber.json"}
+        plugin = {
+                "rerun:target/rerun.txt",
+                "html:target/default-cucumber-reports",
+                "json:target/cucumber.json"}
 )
 public class CucumberRunner {
 
